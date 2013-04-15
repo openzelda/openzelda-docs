@@ -1,0 +1,8 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet href="../common.css"?>
+<h2>TimerCountdown</h2>
+<p class="fundef">TimerCountdown(&time)</p>
+<p>Returns true when time value is 0.</p>
+<p><strong>Argument '&time':</strong>Time counter varable</p>
+<p>True when time reaches 0.</p>
+</div>

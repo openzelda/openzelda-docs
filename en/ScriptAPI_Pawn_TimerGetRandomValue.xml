@@ -1,0 +1,11 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet href="../common.css"?>
+<h2>TimerGetRandomValue</h2>
+<p class="fundef">TimerGetRandomValue(randomness,&random_value,&time,timer_reset)</p>
+<p>Generates a Random number after a set time.</p>
+<p><strong>Argument 'randomness':</strong>max random value.</p>
+<p><strong>Argument '&random_value':</strong>Varable to store the random number.</p>
+<p><strong>Argument '&time':</strong>Time counter varable</p>
+<p><strong>Argument 'timer_reset':</strong>reset value.</p>
+<p>True if random_value is updated.</p>
+</div>
