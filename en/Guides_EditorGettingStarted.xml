@@ -1,0 +1,83 @@
+<?xml-stylesheet href="../common.css"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+
+	<h2>Getting around the Editor</h2>
+	<img src="../images/toolbar.png"/>
+	<p>This tool bar is how you get around.</p>
+
+	<h3>Game Info and Setting</h3>
+	<img src="../images/editor_window_game.png"/>
+	<p>When loading your game, Game Setting Window will be display. This windows allows you to change the name of the game, the map, screen and Display dimension, and along with some advance options such as GUI styling.</p>
+
+	<h3>Language Editor</h3>
+	<img src="../images/editor_window_language.png"/>
+	<p>Next is the language editor, which allow management of Dialogue text and Code strings in multiple languages.</p>
+	<p>Initial, you will have two files for both code string and dialogue, 00.txt and en.txt, 00.txt acts as base for other languages and used for 'routines/private_language.inc' for scripting uses.</p>
+	<br/>
+	<p>If you wish to support more that language in your game, use set the 'language.available' to list of languages separated by |. example: en|de|fr</p>
+	<p>Support of non-english languages is very low, due the developer only knowing English, any help would be appreciated .</p>
+
+	<h3>Spritesheet Editor</h3>
+	<img src="../images/editor_window_spritesheet.png"/>
+	<p>Spritesheets are collection of sprites on a image file, which allows for easy management and editing via 3rd party project.</p>
+	<p>The Spritesheet Editor as 3 modes:</p>
+	<p><b>Sheet Creation</b>: Copy and loads any PNG format Image into the game and to quicken sprites creation and sprites are layout into tiles, you can use the quick create feature</p>
+	<img src="../images/editor_spritesheet_quickcreate.png"/>
+	<p>Sheet can be remove from the game by removing the file the sprite directory.</p>
+	<p><b>Sprite Select Mode</b>: Allows visual section of sprite, double-clicking will bring up the Edit Sprite Dialog</p>
+	<p><b>Sprite/Animation Create Mode</b>: After selecting the Sprite Creation mode, you can select a region to be used as the new sprite. If frames of a Animation aligned in vertically or horizontally you can select all of them and in.</p>
+
+	<h3>New Sprite/Animation Dialogue</h3>
+	<img src="../images/editor_spritesheet_newsprite.png"/>
+
+	<h3>Edit Sprite/Animation Dialogue</h3>
+	<h4>Details</h4>
+	<img src="../images/editor_spritesheet_spritedetails.png"/>
+	<p style="color:rgb(255,255,255);background-color:rgb(255,0,0)">TODO</p>
+
+	<h4>Entity</h4>
+	<img src="../images/editor_spritesheet_spriteentity.png"/>
+	<p style="color:rgb(255,255,255);background-color:rgb(255,0,0)">TODO</p>
+
+	<h4>Grouping</h4>
+	<img src="../images/editor_spritesheet_spritegrouping.png"/>
+	<p style="color:rgb(255,255,255);background-color:rgb(255,0,0)">TODO</p>
+
+	<h4>Collision</h4>
+	<img src="../images/editor_spritesheet_spritecollision.png"/>
+	<p style="color:rgb(255,255,255);background-color:rgb(255,0,0)">TODO</p>
+
+	<h4>Frames</h4>
+	<img src="../images/editor_spritesheet_spriteframe.png"/>
+	<p style="color:rgb(255,255,255);background-color:rgb(255,0,0)">TODO</p>
+
+	<hr/>
+
+	<p><b>Edit Sprite Dialog</b></p>
+	<p><i>Sprite Name</i><b>: </b>Unique sheet id for the sprite, when scripting, it can be access with this, prefixed with Image file name followed by a :, such as 'outside01.png:t0'.</p>
+	<p><i>Position:</i> </p>
+	<p><i>Mask:</i> </p>
+	<p><i>Default Entity:</i> Sets the attach entity when sprite is place on the map.</p>
+	<p><i>Collisions Rectangle:</i> Visual guide to collision for use with attach entity.</p>
+
+	<b> Edit Animation Dialog</b>
+	<p><i>Name</i><b>: </b>Unique sheet id for the animation, when
+	scripting, it can be access with this, prefixed with Image file name
+	followed by a :, such as 'outside01.png:grass'. </p>
+
+	<p><i>Frames:</i> Drop and drag list of sprite used and their offsets in the animation.</p>
+	<p>Preview: Click to play current animation, the red dots will represent the the offset.</p>
+	<p><i>Mask:</i> </p>
+	<p><i>Default Entity:</i> Sets the attach entity when sprite is place on the map.</p>
+
+	<h2>Map Editing</h2>
+	<p>See <a href="QuestDesigner_MapEdit.xml">Editor: Map Editing</a></p>
+	<p>
+
+	</p>
+	<h2>Audio</h2>
+	<p style="color:rgb(255,255,255);background-color:rgb(255,0,0)">TODO</p>
+
+	<h2>Game Script</h2>
+	<p style="color:rgb(255,255,255);background-color:rgb(255,0,0)">TODO</p>
+</div>

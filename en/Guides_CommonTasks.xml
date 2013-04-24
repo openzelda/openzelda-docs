@@ -1,0 +1,46 @@
+<?xml-stylesheet href="../common.css"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+	<h2>Runtime Settings</h2>
+	<div><b>Runtime Settings</b> can be accessed by select an object and right clicking and selecting Advance or the Settings Submenu.</div>
+
+	<h2>Setting a Door target</h2>
+	<div>The default door entity is design to move the colliding entity to another map in a section. <b>Note:</b> <i>Target Door must be a named entity on a map that is part of a Section.</i></div>
+	<div><i>key</i> - Determines if a key is need to open door. <b>1</b> for normal key, <b>2</b> for master key.</div>
+	<div><i>closed</i> - Enable it door is close, otherwise it's open.</div>
+	<div><i>shut</i> - A non-shut door will open if a player touches it.</div>
+	<div><i>section </i>- For this door entity it can only connect section together.</div>
+	<div><i>target_map </i>- List of map that are part of 'section' section.</div>
+	<div><i>target </i>- List of entities that are part of 'target_map' map.</div>
+
+	<h2>Open Door (or other event) on death of all enemies</h2>
+	<div>Map Script:
+		<pre>// To ease development,  may include a Init Function.
+// If You wish to use your own uncomment the next line
+#define HASINITFUNCTION 1
+#tryinclude &lt;map_default&gt;
+#tryinclude &lt;map_features/enemy_check&gt;
+
+public Init( ... )
+{
+	InitMap();
+	ResetEnemyCount();
+}
+
+main()
+{
+	CheckEnemy( "DungeonOutsideDoor", "OpenDoor" ); // Arguments are Entity ID and Function
+}</pre>
+	</div>
+
+	<h2>Dungeon Intro</h2>
+	<div>No script need, just set the name of the Dungeon in map option</div>
+
+	<h2>Switch To Open Door (or other event) </h2>
+	<div>Modify the switches' Runtime Setting to call a entity's function.</div>
+	<div><i>on-entity</i> - Entity Name for when being step on.</div>
+	<div><i>on-function</i> - Function to call for when being step on.</div>
+	<div><i>off-entity</i> - Entity Name for when being step off.</div>
+	<div><i>off-function</i> - Function to call for when being step off.</div>
+
+
+</div>

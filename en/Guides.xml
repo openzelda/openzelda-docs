@@ -2,8 +2,76 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
 
 	<h2>Guides</h2>
+	<h3>Customising Your Quest</h3>
+
+	<h4>Head Up Display</h4>
+	<p>Like the menu, HUD is descipted in two files, hud.xml map and the hud.mps entity. These files are still in development, so they are not as flexible as they should be yet.</p>
+
+	<h4>Menu</h4>
+	<p>Like the HUD, Menu is descipted in two files, menu.xml map and the menu.mps entity. These files are still in development, so they are not as flexible as they should be yet.</p>
+
+	<h3>Common Tasks</h3>
 	<ul>
-		<li><a href="Guides_CreatingGames.xml">Creating Games</a></li>
-		<li><a href="Guides_CreatingGenres.xml">Creating Genres</a></li>
+		<li><a href="Guides_CommonTasks.xml">Runtime Settings</a></li>
+		<li><a href="Guides_CommonTasks.xml">Setting a Door target</a></li>
+		<li><a href="Guides_CommonTasks.xml">Open Door (or other event) on death of all enemies</a></li>
+		<li><a href="Guides_CommonTasks.xml">Dungeon Intro</a></li>
+		<li><a href="Guides_CommonTasks.xml">Switch To Open Door (or other event)</a></li>
 	</ul>
+
+	<h3>Editor</h3>
+	<ul>
+		<li><a href="Guides_EditorGettingStarted.xml">Getting Started</a></li>
+	</ul>
+
+	<h3>Open Zelda Design</h3>
+	<p>In Open Zelda, Each item on the screen is classed as an Object. From a sprite, circle or some text, they're all treated the same, allowing from easy reusing of existing code. For example, you could add the block entity to a Tree sprite, and it will act as a block you can push around.</p>
+
+	<h3>Entity Notes and How to Use them.</h3>
+	<p>
+		<h4>link.mps</h4>
+		<p>Player Entity, Can be found attach to "player" sprite on "p01.png" spritesheet. Just make sure you make it a global entity.</p>
+		<h4>door.mps</h4>
+		<p><strong>Runtime Settings</strong>
+			<div><i>key</i> - Determines if a key is need to open door. <b>1</b> for normal key, <b>2</b> for master key.</div>
+			<div><i>closed</i> - Enable it door is close, otherwise it's open.</div>
+			<div><i>shut</i> - A non-shut door will open if a player touches it.</div>
+			<div><i>section </i>- For this door entity it can only connect section together.</div>
+			<div><i>target_map </i>- List of map that are part of 'section' section.</div>
+			<div><i>target </i>- List of entities that are part of 'target_map' map.</div>
+		</p>
+		<p><strong>Public Functions</strong>
+			<div><i>OpenDoor</i></div>
+			<div><i>CloseDoor</i></div>
+		</p>
+		<p><strong>Sprites</strong>
+			<div><i>Door</i> - [SpriteName]</div>
+			<div><i>Closed Door</i> - [SpriteName]-closed</div>
+			<div><i>Key Locked Door</i> - [SpriteName]-locked</div>
+			<div><i>Arch for Door</i> - [SpriteName]-arch</div>
+		</p>
+
+		<h4>switch.mps</h4>
+		<p><strong>Runtime Settings</strong>
+			<div><i>on-entity</i> - Entity Name for when being step on.</div>
+			<div><i>on-function</i> - Function to call for when being step on.</div>
+			<div><i>off-entity</i> - Entity Name for when being step off.</div>
+			<div><i>off-function</i> - Function to call for when being step off.</div>
+		</p>
+		<p><strong>Sprites</strong>
+			<div><i>Up</i> - [SheetName]:1 aka Sprite '1' on Sheet</div>
+			<div><i>Down</i> - [SheetName]:2</div>
+		</p>
+	</p>
+
+
+
+
+	<h3>Videos</h3>
+	<ul>
+		<li>Getting Started - http://www.youtube.com/watch?v=iSzu9zOWmBE - Version 1.0</li>
+		<li>Doors - http://www.youtube.com/watch?v=-rVgXbU-gBk - Version 1.2</li>
+		<li>Pushing Tree -http://www.youtube.com/watch?v=c-B48XcvupE - Version 1.2</li>
+	</ul>
+
 </div>
