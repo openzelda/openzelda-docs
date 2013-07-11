@@ -1,4 +1,4 @@
-<?xml-stylesheet href="common.css"?>
+<?xml-stylesheet href="../common.css"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
 <pre>#include &lt;realenums&gt;
 
@@ -45,7 +45,6 @@ stock Real:RealClamp(Real:value, Real:min, Real:max)
 	else
 		return value;
 }
-
 
 
 </pre>

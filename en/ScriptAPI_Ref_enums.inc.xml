@@ -1,6 +1,6 @@
-<?xml-stylesheet href="common.css"?>
+<?xml-stylesheet href="../common.css"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
-<pre>#if defined _enum_included
+	<pre>#if defined _enum_included
   #endinput
 #endif
 #define _enum_included
@@ -8,7 +8,7 @@
 
 
 #define SELF 0
-#define SELF_STRING &quot;&quot;
+#define SELF_STRING ""
 
 #define OBJECT_NONE object:-1
 
@@ -50,3 +50,4 @@ const DisplayDevice: {
 #define GREEN 0x00FF00FF
 </pre>
 </div>
+

@@ -1,4 +1,4 @@
-<?xml-stylesheet href="common.css"?>
+<?xml-stylesheet href="../common.css"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
 <pre>#if defined _temp_included
   #endinput
