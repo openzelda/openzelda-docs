@@ -7,5 +7,6 @@
 		<strong>Argument 'line':</strong>line of language wanted.</p>
 	<p>
 		<strong>Argument 'returnstring[]':</strong>String to store language string.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

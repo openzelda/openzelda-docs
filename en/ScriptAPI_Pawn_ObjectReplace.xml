@@ -9,5 +9,6 @@
 		<strong>Argument 'string[]':</strong>Sprite/animation name or text.</p>
 	<p>
 		<strong>Argument 'GraphicTypes:type':</strong>Type of Object.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

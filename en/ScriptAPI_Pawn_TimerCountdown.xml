@@ -7,5 +7,6 @@
 		<strong>Argument '&amp;time':</strong>Time counter varable</p>
 	<p>
 		<strong>Returns: </strong>True when time reaches 0.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

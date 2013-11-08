@@ -9,5 +9,6 @@
 		<strong>Argument 'variable[]':</strong>Name of public variable.</p>
 	<p>
 		<strong>Returns: </strong>the public variable value.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

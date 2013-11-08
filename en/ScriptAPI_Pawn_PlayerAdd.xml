@@ -5,5 +5,6 @@
 	<p>Adds new player</p>
 	<p>
 		<strong>Returns: </strong>0 on Error.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

@@ -13,5 +13,6 @@
 		<strong>Argument 'h':</strong>Area of Mask to change.</p>
 	<p>
 		<strong>Argument 'value':</strong>Set the mask are to this value.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

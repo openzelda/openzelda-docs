@@ -13,5 +13,6 @@
 		<strong>Argument 'rect2':</strong>Rhe collision rectangle of second entity you wish to check.</p>
 	<p>
 		<strong>Returns: </strong>True if the collision rectangle of two entities are colliding.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

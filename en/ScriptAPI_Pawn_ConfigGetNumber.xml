@@ -7,5 +7,6 @@
 		<strong>Argument 'config[]':</strong></p>
 	<p>
 		<strong>Returns: </strong>A number from game settings, 0 if no value is found or not is not a number.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

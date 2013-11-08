@@ -15,5 +15,6 @@
 	GameDetails(prequel_id, 0, array);
 	played_prequel = array[0];
 	</pre>
+	<script src="../highlight.pack.js"/>
 </div>
 

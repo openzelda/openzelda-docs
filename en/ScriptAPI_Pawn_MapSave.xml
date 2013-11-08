@@ -3,5 +3,6 @@
 	<h2>MapSave</h2>
 	<p class="fundef">MapSave()</p>
 	<p>Save the map</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

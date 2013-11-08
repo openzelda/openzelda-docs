@@ -11,5 +11,6 @@
 		<strong>Argument 'Fixed:z':</strong>New Position. Pass cellmin to skip update that value.</p>
 	<p>
 		<strong>Argument 'id':</strong>Entity ID.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

@@ -9,5 +9,6 @@
 		<strong>Argument '&amp;w':</strong>Variable to store the width. </p>
 	<p>
 		<strong>Argument '&amp;h':</strong>Variable to store the height. </p>
+	<script src="../highlight.pack.js"/>
 </div>
 

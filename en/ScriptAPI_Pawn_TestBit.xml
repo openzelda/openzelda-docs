@@ -9,5 +9,6 @@
 		<strong>Argument 'position':</strong>Bit Position to change.</p>
 	<p>
 		<strong>Returns: </strong>bit value</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

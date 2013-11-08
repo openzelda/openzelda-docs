@@ -14,5 +14,6 @@
 	if ( InputButton(0,0) == 1 )
 		Shoot();
 	</pre>
+	<script src="../highlight.pack.js"/>
 </div>
 

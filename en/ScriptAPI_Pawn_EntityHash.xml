@@ -7,5 +7,6 @@
 		<strong>Argument 'id_string[]':</strong>ID to give the entity.</p>
 	<p>
 		<strong>Returns: </strong>Returns the Entity Hash.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

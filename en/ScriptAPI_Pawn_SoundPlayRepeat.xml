@@ -7,5 +7,6 @@
 		<strong>Argument '&amp;value':</strong>Variable to store if audio has been played.</p>
 	<p>
 		<strong>Argument 'file[]':</strong>Audio File.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

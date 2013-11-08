@@ -13,5 +13,6 @@
 		<strong>Argument 'timer_reset':</strong>reset value.</p>
 	<p>
 		<strong>Returns: </strong>True if random_value is updated.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

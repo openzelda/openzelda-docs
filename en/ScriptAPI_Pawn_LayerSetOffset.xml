@@ -27,5 +27,6 @@
 		MapSetOffset(worldx, worldy);
 	}
 	</pre>
+	<script src="../highlight.pack.js"/>
 </div>
 
