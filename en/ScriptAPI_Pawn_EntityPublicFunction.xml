@@ -19,5 +19,6 @@
 		<strong>Argument '...':</strong>List of Arguments to pass to the function.</p>
 	<p>
 		<strong>Returns: </strong>What the function returns. May return -1 and -2 on error. </p>
+	<script src="../highlight.pack.js"/>
 </div>
 

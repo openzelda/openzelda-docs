@@ -9,5 +9,6 @@
 		<strong>Argument 'reset':</strong>reset value.</p>
 	<p>
 		<strong>Returns: </strong>True when time reaches 0.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

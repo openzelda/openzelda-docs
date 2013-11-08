@@ -19,5 +19,6 @@
 	strformat(string, _, true, "Text: %s, Color: %x, Number: %d, Fixed: %q\n", "Hello", 0xFFBBAAFF, 42, 50.254);
 	DebugText(string);
 	</pre>
+	<script src="../highlight.pack.js"/>
 </div>
 

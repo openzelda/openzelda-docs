@@ -9,5 +9,6 @@
 		<strong>Argument 'value':</strong>Value between -255 and 255.</p>
 	<p>
 		<strong>Argument 'player':</strong>0 for current player otherwise the selected player.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

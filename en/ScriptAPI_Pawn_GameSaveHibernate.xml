@@ -3,5 +3,6 @@
 	<h2>GameSaveHibernate</h2>
 	<p class="fundef">GameSaveHibernate()</p>
 	<p>Hibernate a game</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

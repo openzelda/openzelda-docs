@@ -17,5 +17,6 @@
 		<strong>Argument 'h':</strong>Height of the object. Sprites and Animations repeat until they fit into the  Height, also Height can be zero.</p>
 	<p>
 		<strong>Argument 'pos':</strong></p>
+	<script src="../highlight.pack.js"/>
 </div>
 

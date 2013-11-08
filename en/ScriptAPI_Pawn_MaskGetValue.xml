@@ -11,5 +11,6 @@
 		<strong>Argument 'layer':</strong>Not used</p>
 	<p>
 		<strong>Returns: </strong>Value of mask at that point. Value is capped between 0-255.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

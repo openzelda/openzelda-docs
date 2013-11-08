@@ -7,5 +7,6 @@
 		<strong>Argument 'mapid':</strong>map id to check.</p>
 	<p>
 		<strong>Returns: </strong>True if valid.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

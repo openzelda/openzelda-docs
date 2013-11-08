@@ -11,5 +11,6 @@
 		<strong>Argument 'string[]':</strong>String to store the Entity Name.</p>
 	<p>
 		<strong>Returns: </strong>True if there still more entities. False if no more is in the list.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

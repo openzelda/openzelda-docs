@@ -9,5 +9,6 @@
 		<strong>Argument 'loop':</strong>Set to false to play music only once.</p>
 	<p>
 		<strong>Argument 'fadeLength':</strong>The length of fade in milliseconds</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

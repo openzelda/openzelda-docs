@@ -7,5 +7,6 @@
 		<strong>Argument 'map[]':</strong>Sting to store name of map.</p>
 	<p>
 		<strong>Returns: </strong>Map ID.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

@@ -7,5 +7,6 @@
 		<strong>Argument 'id[]':</strong>Name of sprite or "__screen" for screen, "__map" for standard map and "map" for current map.</p>
 	<p>
 		<strong>Returns: </strong>Height of Map, Screen or Sprite.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

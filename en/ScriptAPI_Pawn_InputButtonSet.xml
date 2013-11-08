@@ -9,5 +9,6 @@
 		<strong>Argument 'value':</strong>0 for un-pressed button, 1 for pressed button, 2 for held down button</p>
 	<p>
 		<strong>Argument 'player':</strong>0 for current player otherwise the selected player.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

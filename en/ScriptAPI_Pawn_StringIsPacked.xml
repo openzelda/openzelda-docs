@@ -7,5 +7,6 @@
 		<strong>Argument 'string[]':</strong>String to check.</p>
 	<p>
 		<strong>Returns: </strong>True if string has been packed.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

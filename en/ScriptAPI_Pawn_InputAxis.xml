@@ -14,5 +14,6 @@
 	if ( InputButton(1,0) == 255 )
 		MoveUp();
 	</pre>
+	<script src="../highlight.pack.js"/>
 </div>
 

@@ -9,5 +9,6 @@
 		<strong>Argument 'anim[]':</strong></p>
 	<p>
 		<strong>Returns: </strong>Returns length of animation in seconds.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

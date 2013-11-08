@@ -9,5 +9,6 @@
 		<strong>Argument 'type':</strong>Collision rectangle type.</p>
 	<p>
 		<strong>Argument 'id':</strong>Entity ID Hash.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

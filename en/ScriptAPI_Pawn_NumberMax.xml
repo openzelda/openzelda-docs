@@ -9,5 +9,6 @@
 		<strong>Argument 'value2':</strong>Values to pick between.</p>
 	<p>
 		<strong>Returns: </strong>The larger value.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

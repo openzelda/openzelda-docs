@@ -11,5 +11,6 @@
 		<strong>Argument 'position':</strong>Bit position.</p>
 	<p>
 		<strong>Argument 'size':</strong>Number of bits to use.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

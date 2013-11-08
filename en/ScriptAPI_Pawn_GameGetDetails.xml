@@ -13,5 +13,6 @@
 	GameGetDetails(0, array);
 	highscore = array[0];
 	</pre>
+	<script src="../highlight.pack.js"/>
 </div>
 

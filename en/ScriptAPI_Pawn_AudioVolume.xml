@@ -9,5 +9,6 @@
 		<strong>Argument 'level':</strong>Requested Volume level.</p>
 	<p>
 		<strong>Returns: </strong>Current volume level</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

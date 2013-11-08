@@ -5,5 +5,6 @@
 	<p>Play Dialog.</p>
 	<p>
 		<strong>Argument 'line':</strong>the requested line.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

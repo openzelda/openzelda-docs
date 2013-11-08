@@ -13,5 +13,6 @@
 		<strong>Argument '&amp;y':</strong>Variable to store the dimension.</p>
 	<p>
 		<strong>Argument 'bool:loop':</strong>loop movement.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

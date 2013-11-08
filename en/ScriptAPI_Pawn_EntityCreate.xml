@@ -27,5 +27,6 @@
 		<strong>Argument '...':</strong>List of Arguments to pass to the entity Init function. </p>
 	<p>
 		<strong>Returns: </strong>0 on error, otherwise it returns the Entity Hash.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

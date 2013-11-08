@@ -7,5 +7,6 @@
 		<strong>Argument 'strings[][]':</strong>Stores file name in directory.</p>
 	<p>
 		<strong>Argument 'directory[]':</strong>Directory name.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

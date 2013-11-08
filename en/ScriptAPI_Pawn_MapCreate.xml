@@ -9,5 +9,6 @@
 		<strong>Argument 'create_new':</strong>create new map.</p>
 	<p>
 		<strong>Returns: </strong>New map ID.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

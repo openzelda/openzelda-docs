@@ -5,5 +5,6 @@
 	<p>Remove Save Game.</p>
 	<p>
 		<strong>Argument 'slot':</strong>Save slot to use, 1-9 are available.</p>
+	<script src="../highlight.pack.js"/>
 </div>
 

@@ -53,5 +53,6 @@
 		LayerColour(5, DayNight[hour]);
 	}
 	</pre>
+	<script src="../highlight.pack.js"/>
 </div>
 
