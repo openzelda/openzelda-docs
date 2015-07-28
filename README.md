@@ -1,2 +1,1 @@
-Mokoi Gaming Documentation
-http://mokoi.info/docs/
+Open Zelda Documentation
