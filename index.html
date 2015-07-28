@@ -1,62 +1,154 @@
 <!doctype html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="en/common.css">
-        <title>Open Zelda - Documentation</title>
-    </head>
-    <body>
-		<p>Congratulation, you're on the way to creating your own game.</p>
+<html lang="en" manifest="/cache.manifest">
+<head>
+	<title>Open Zelda Documentation</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+	path { fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1; }
+	rect { fill:#5f5f5f; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:2.30767632; stroke-linecap:round; stroke-linejoin:round; stroke-miterlimit:4; stroke-dasharray:none; stroke-dashoffset:0; stroke-opacity:1; }
+	
+	div#pagetext { flex: 1 0 auto; }
+	aside#sidebar { flex: 0 1 auto; padding-right: 1em; font-size: .8em; }
+	.flex
+	{
+		display: -webkit-flex;
+		-webkit-flex-direction: row;
+		display: flex;
+		flex-direction: row;
+	}
+	</style>
+	<script src="highlight.pack.js"></script>
+	<script src="lx.js"></script>
+	<meta name="google-translate-customization" content="db3381c38679f071-65f53f581fcac1f5-gaa972de4b43bcd15-a"></meta>
+</head>
+<body class="scripted" data-function="LoadPage">
+	<header>
+		<h1>Open Zelda</h1>
+		<div>Documentation</div>
+	</header>
+	<nav>
+		<a href="#index.xml">Home</a><div id="google_translate_element"></div>
+	</nav>
+	<section id="main" class="flex">
+		<aside id="sidebar" class="scripted" data-function="LoadIndex">
+		</aside>
+		<div id="pagetext">
+		</div>
+	</section>
+	<script>function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-2033908-1'}, 'google_translate_element'); }</script>
+	<!--script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script-->
+</body>
 
-		<h2>Getting Around The Editor</h2>
-		<p><img src="images/toolbar.png" alt=""/></p>
+<script>
+function IndexAppend(e, pages)
+{
+	for (var item in pages)
+	{
+		if ( typeof pages[item] === 'object' )
+		{
+			var element = document.createElement('ul');
+			e.innerHTML += '<li>' + item + '</li>';
+			e.appendChild(element)
 
-		<p>All the major components in Quest Designer can be access by this toolbar. The Project menu gives you links to Play (Ctrl-p), Save and Compile the Game, you can also Import and Export project content. </p>
+			IndexAppend(element, pages[item]);
+		}
+		else
+		{
+			if ( item == "index" )
+			{
+				var link = document.createElement('a');
+				link.setAttribute('href', '#'+pages[item])
+				link.innerHTML = e.previousSibling.innerHTML;
+				
+				e.previousSibling.innerHTML = "";
+				e.previousSibling.appendChild(link)
+			}
+			else
+			{
+				var list = document.createElement('li');
+				var link = document.createElement('a');
+		
+				link.setAttribute('href', '#'+pages[item])
+				link.innerHTML = item;
 
-		<h3>Game Info &amp; Settings</h3>
-		<p>These this were you can change the features of the engine for suit your game.</p>
-		<p><a href="en/QuestDesigner_Project.xml">Read more on this component</a></p>
+				list.appendChild(link)
+				e.appendChild(list)
+			}
+		}
+	}
+}
 
-		<h3>Language Editor</h3>
-		<p>Language Editor manages the Game's dialog text and code strings and the language translations.</p>
-		<p>If you wish to support more that language in your game, use the settings 'language.available' and set it to a list of the languages separated by a |. example: en|de|fr</p>
-		<p><a href="en/QuestDesigner_Language.xml">Read more on this component</a></p>
+function scriptLoadPage(e) 
+{
+	page = document.location.hash;
+	if (page)
+	{
+		page = page.substr(1, page.length);
+		var q = new lxRequest('GET', 'en/'+page, true);
+		q.send( document.getElementById('pagetext'), null, function(request) { 
+			try {
+				request.getMessage();
+				if ( request.request.responseXML )
+				{
+					import_content( request.request.responseXML.documentElement, request.parent )
+					highlight()
+				}
+			} catch (e) {
+				request.parent.innerHTML = "Parsing error:" + e; 
+			}
+		} );
+	}
+}
 
-		<h3>Sprite Sheets Editor</h3>
-		<p>Spritesheets are collection of sprites on a image file, which allows for easy management and editing via 3rd party project.</p>
-		<p>The Editor allows for creation and modifying of sprites and animations.</p>
-		<p><a href="en/QuestDesigner_Spritesheet.xml">Read more on this component</a></p>
+function scriptLoadIndex(e)
+{
+	var q = new lxRequest('GET', 'pages.json', true);
+	q.send( e, null, function(request) { 
+		try {
+			var pages = JSON.parse( request.getMessage() );
+			var element = document.createElement('ul');
+			request.parent.appendChild(element)
 
-		<h3>Map Editor</h3>
-		<p><img src="images/editor_mapeditor" alt=""/></p>
-		<p>Map Editor page has two lists, Map Files and Map Section.</p>
-		<p>Map Section a group of maps, which allow automatic movement between maps.</p>
-		<p><a href="en/QuestDesigner_MapSection.xml">More on Map Section component</a> <a href="en/QuestDesigner_MapEdit.xml">More on Map Editing component</a></p>
+			IndexAppend(element, pages);
+		} catch (e) {
+			request.parent.innerHTML = "Parsing error:" + e; 
+		}
+	} );
+}
 
-		<h3>Audio</h3>
-		<p>Manage you game's Sound Effects and Music.</p>
-		<p><a href="en/QuestDesigner_Audio.xml">Read more on this component</a></p>
+function highlight()
+{
+	var q = document.getElementsByTagName('pre');
+	for (var i = 0; i < q.length; ++i) { hljs.highlightBlock(q[i]) }
+}
 
-		<h3>Game Scripts</h3>
-		<p>Game Scripts, also known as Entities, controls how objects are handle in the game.</p>
-		<p><a href="en/QuestDesigner_Entities.xml">Read more on this component</a></p>
+</script>
+<script>
+if ( window.location.protocol === 'file:')
+{
+	var element = document.createElement('div');
+	element.innerHTML = 'Your Browser may not support accessing local files. Access via <a href="http://openzelda.github.io/openzelda-docs/">openzelda.github.io/openzelda-docs/</a>'
+	document.getElementsByTagName('body')[0].insertBefore( element, document.getElementById('main') );
+}
 
-		<h2>More Help</h2>
-		<ul>
-			<li><a href="en/Guides.xml">Guides</a></li>
-			<li><a href="en/Scripting.xml">Scripting</a></li>
-		</ul>
+var scritped_elements = document.getElementsByClassName('scripted');
+if (scritped_elements.length)
+{
+	for (var n = 0; n < scritped_elements.length; n++)
+	{
+		var fun = 'script' + scritped_elements[n].getAttribute('data-function');
+		if ( window[fun] )
+		{
+			window[fun](scritped_elements[n]);
+		}
+	}
+}
+window.addEventListener('hashchange', scriptLoadPage, true);
 
-		<h2>Game Creation Tutorials</h2>
-		<p>More generalise topics</p>
-		<ol>
-			<li><a href="en/Tutorials_1HelloWorld.xml">Hello World</a></li>
-			<li><a href="en/Tutorials_2UsingGraphics.xml">Using Graphics</a></li>
-			<li><a href="en/Tutorials_3BasicEntity.xml">Basic Entity</a></li>
-			<li><a href="en/Tutorials_4MovingEntity.xml">Moving Entity</a></li>
-			<li><a href="en/Tutorials_5TalkingToOtherEntity.xml">Taking to Other Entity</a></li>
-		</ol>
+if(document.location.hash == "")
+	document.location.hash = "index.xml";
 
-    </body>
+</script>
 </html>
-
